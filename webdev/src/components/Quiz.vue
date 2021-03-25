@@ -396,7 +396,15 @@ button.clicked {
 button.rightAnswer {
 	animation: flashButton;
 	animation-duration: 700ms;
-	/*====TO DO====*/
+	animation-delay: 200ms;
+	animation-iteration-count: 2;
+	animation-timing-function: ease-in-out;
+	color: black;
+	background: linear-gradient(
+		210deg,
+		rgba(0, 178, 72, 0.25),
+		rgba(0, 178, 72, 0.5)
+	);
 }
 button.wrongAnswer {
 	color: black;
