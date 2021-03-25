@@ -1,0 +1,214 @@
+{
+    "results": [
+        {
+            "question": "Em que ano se registou o primeiro uso de cassetes?",
+            "correct_answer": "1938",
+            "incorrect_answers": ["1969","1960","1945"]
+        },
+        {
+            "question": "Quem apresentou o primeiro circuito integrado ao mundo?",
+            "correct_answer": "Jack Kilby",
+            "incorrect_answers": ["Phillip Miller","Graham Bell","Margaret Hamilton"]
+        },
+        {
+            "question": "Qual o nome da primeira rede de internet criada?",
+            "correct_answer": "Arpanet",
+            "incorrect_answers": ["Intranet","Debinet","Pentcon"]
+        },
+        {
+            "question": "Que empresa comercializou o primeiro microprocessador?",
+            "correct_answer": "Intel",
+            "incorrect_answers": ["Toshiba","Dell","Ericsson"]
+        },
+        {
+            "question": "Quantos jogos foram jogados na ultima game night do NEEC?",
+            "correct_answer": "6",
+            "incorrect_answers": ["3","4","5"]
+        },
+        {
+            "question": "Que ambiente é simulado na NEECATHON?",
+            "correct_answer": "StartUp",
+            "incorrect_answers": ["Empresarial","Investigação","Connection"]
+        },
+        {
+            "question": "Quantos anos tem o NEEC?",
+            "correct_answer": "18",
+            "incorrect_answers": ["20","16","22"]
+        },
+        {
+            "question": "Quem é considerado o inventor do rádio?",
+            "correct_answer": "Guglielmo Marconi",
+            "incorrect_answers": ["Karl Braun","James Maxwell","Reginald Fessenden"]
+        },
+        {
+            "question": "Qual destas pessoas é fundador da Microsoft?",
+            "correct_answer": "Paul Allen",
+            "incorrect_answers": ["Tim Cook","Steve Blank","Pierre Omidyar"]
+        },
+        {
+            "question": "A equipa fundadora da Unbabel é de que nacionalidade?",
+            "correct_answer": "Portuguesa",
+            "incorrect_answers": ["Alemã","Francesa","Italiana"]
+        },
+        {
+            "question": "Que curso tirou o atual Secretário Geral das Nações Unidas, António Guterees?",
+            "correct_answer": "MEEC",
+            "incorrect_answers": ["MEC","LEIC","MAer"]
+        },
+        {
+            "question": "Qual a nacionalidade do fundador da Farfetch?",
+            "correct_answer": "Portuguesa",
+            "incorrect_answers": ["Holandesa","Alemã","Inglesa"]
+        },
+        {
+            "question": "Qual destas pessoas não é um fundador do Youtube?",
+            "correct_answer": "Marc Randolph",
+            "incorrect_answers": ["Jawed Karim","Steve Chen","Chad Hurley"]
+        },
+        {
+            "question": "Quantos veículos da Tesla foram vendidos no mundo em 2020?",
+            "correct_answer": "499 mil",
+            "incorrect_answers": ["350 mil","634 mil","271 mil"]
+        },
+        {
+            "question": "Qual é a linguagem de programação mais popular destas quatro, em 2020/2021?",
+            "correct_answer": "Python",
+            "incorrect_answers": ["C","R","PHP"]
+        },
+        {
+            "question": "Qual é a Lei de Ohm?",
+            "correct_answer": "U=RI",
+            "incorrect_answers": ["R=UI","R=2I+U","U=2R+I"]
+        },
+        {
+            "question": "Em que ano foi vendido o primeiro Macintosh?",
+            "correct_answer": "1984",
+            "incorrect_answers": ["1973","1987","1977"]
+        },
+        {
+            "question": "Em que ano foi fundado o IST?",
+            "correct_answer": "1911",
+            "incorrect_answers": ["1913","1920","1923"]
+        },
+        {
+            "question": "Quantos fusos horários tem a Rússia?",
+            "correct_answer": "11",
+            "incorrect_answers": ["7","6","9"]
+        },
+        {
+            "question": "Qual é o animal nacional da Austrália?",
+            "correct_answer": "Canguru-vermelho",
+            "incorrect_answers": ["Koala","Tucano","Formiga"]
+        },
+        {
+            "question": "Qual dos seguintes impérios não tinha uma língua escrita?",
+            "correct_answer": "Inca",
+            "incorrect_answers": ["Azteca","Egípcio","Romano"]
+        },
+        {
+            "question": "Que país tem mais ilhas no mundo?",
+            "correct_answer": "Suécia",
+            "incorrect_answers": ["Grécia","Turquia","Estados Unidos"]
+        },
+        {
+            "question": "Quantas teclas tem um piano clássico?",
+            "correct_answer": "88",
+            "incorrect_answers": ["74","62","92"]
+        },
+        {
+            "question": "Que matemático e geógrafo grego calculou o perímetro da Terra em 240 a.C.?",
+            "correct_answer": "Eratóstenes",
+            "incorrect_answers": ["Descartes","Sócrates","Sófocles"]
+        },
+        {
+            "question": "Segundo o tratado assinado em 1971, que região do planeta ficou interdita a armas nucleares?",
+            "correct_answer": "Antártida",
+            "incorrect_answers": ["Sara","África","Bahamas"]
+        },
+        {
+            "question": "Por que nome se tornou mais conhecido o escritor norte-americano Samuel Langhorne Clemens?",
+            "correct_answer": "Mark Twain",
+            "incorrect_answers": ["Paul Auster","Paulo Coelho","Nicolau Gogol"]
+        },
+        {
+            "question": "Que expressão alemã significa “guerra-relâmpago”?",
+            "correct_answer": "Blitzkrieg",
+            "incorrect_answers": ["Sauerkraut","Glasnost","Reichstag"]
+        },
+        {
+            "question": "Como se chamou o Sporting Club de Portugal entre 1904 e 1906?",
+            "correct_answer": "Campo Grande Football Club",
+            "incorrect_answers": ["Sporting de Portugal","Não teve nome","Leões da Estrela"]
+        },
+        {
+            "question": "Junto a que cidade do Novo México se julga ter caído um OVNI em 1947?",
+            "correct_answer": "Roswell",
+            "incorrect_answers": ["Tijuana","Las Vegas","Chihuahua"]
+        },
+        {
+            "question": "Em Portugal, a que cidadãos foi retirado o direito de voto em 1913?",
+            "correct_answer": "Analfabetos",
+            "incorrect_answers": ["Mulheres","Emigrantes","Idosos"]
+        },
+        {
+            "question": "Qual é o mais famoso detetive criado por Raymond Chandler?",
+            "correct_answer": "Philip Marlowe",
+            "incorrect_answers": ["Hercule Poirot","Sherlock Holmes","Agatha Christie"]
+        },
+        {
+            "question": "Em que atividade se destacou Le Corbusier?",
+            "correct_answer": "Arquitetura",
+            "incorrect_answers": ["Cinema","Teatro","Literatura"]
+        },
+        {
+            "question": "Que parque natural na região de Bragança foi criado em 1979?",
+            "correct_answer": "Montesinho",
+            "incorrect_answers": ["Peneda-Gerês","Alto Douro","Arrábida"]
+        },
+        {
+            "question": "Como se chama a personagem principal do filme Touro Enraivecido?",
+            "correct_answer": "Jake La Motta",
+            "incorrect_answers": ["Sugar Ray Robinson","Belarmino","Muhamad Ali"]
+        },
+        {
+            "question": "Quanto tempo demora a Lua a dar a volta à Terra (período orbital)?",
+            "correct_answer": "27 dias e 8 horas",
+            "incorrect_answers": ["25 dias","30 dias","29 dias e 12 horas"]
+        },
+        {
+            "question": "Quem recebeu um prémio Nobel devido ao desenvolvimento da encefalografia arterial?",
+            "correct_answer": "Egas Moniz",
+            "incorrect_answers": ["Júlio de Matos","Michael Faraday","Sousa Martins"]
+        },
+        {
+            "question": "Que eletrodoméstico foi criado por Murray Spangler em 1907 e que ainda hoje é vendido praticamente inalterado?",
+            "correct_answer": "Aspirador",
+            "incorrect_answers": ["Esquentador","Torradeira","Micro-ondas"]
+        },
+        {
+            "question": "Que modalidade desportiva foi introduzida em Portugal Continental em 1888 por Guilherme Pinto Basto?",
+            "correct_answer": "Futebol",
+            "incorrect_answers": ["Corfebol","Ténis","Andebol"]
+        },
+        {
+            "question": " Qual é o objeto de estudo do puericultor?",
+            "correct_answer": "Crianças",
+            "incorrect_answers": ["Coelhos","Abelhas","Galinhas"]
+        },
+        {
+            "question": "Que país sul-americano é o maior produtor de vinho?",
+            "correct_answer": "Argentina",
+            "incorrect_answers": ["Canadá","Brasil","Venezuela"]
+        },
+        {
+            "question": "Quem comandou a segunda invasão napoleónica em Portugal?",
+            "correct_answer": "Soult",
+            "incorrect_answers": ["Napoleão","Junot","Wellington"]
+        },
+        {
+            "question": "Qual é a corrente filosófica defendida por Martin Heidegger?",
+            "correct_answer": "Existencialismo",
+            "incorrect_answers": ["Positivismo","Niilismo","Abstracionismo"]
+        }
+    ]
+}
