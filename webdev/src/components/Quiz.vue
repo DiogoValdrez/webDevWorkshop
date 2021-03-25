@@ -30,7 +30,7 @@
 			<h1 v-html="loading ? 'Loading...' : currentQuestion.question"></h1>
 			<!-- Aqui usamos o operador ternário para verificar se o quiz já está carregado -->
 			<form v-if="currentQuestion" class="buttons">
-				<!--	TO DO	-->
+				<button v-for="answer in currentQuestion.answers" :qgroup="currentQuestion.key" :key="answer" :index="index" v-html="answer" @click.prevent="handleButtonClick"></button>
 			</form>
 		</div>
 		<h1 id="score" hidden="true"></h1>
@@ -149,17 +149,21 @@ export default {
 		 * O parâmetro "event" remete para a ação de clicar no botão
 		 */
 		handleButtonClick: function (event) {
-			/*====TO DO====*/
 			// encontra o index que descreve a pergunta
-
-			// encontra a resposta que o utilziador escolheu
-
+				let index = event.target.getAttribute("index");
+			// encontra a resposta que o utilizador escolheu
+				let userAnswer = event.target.innerHTML;
 			// coloca a propriedade da pergunta "userAnswer" com a resposta do utilizador
-
+				this.questions[index].userAnswer = userAnswer;
 			// informa que o botão foi carregado -> para o CSS
-
+				event.target.classList.add("clicked");
 			// desliga os outros botões
-
+				let allButtons = document.querySelectorAll(`[index="${index}"]`);
+				for (let i = 0; i < allButtons.length; i++){
+					if (allButtons[i] === event.target) continue;
+					//os 3 iguais fazem com que os tipos de variaveis e os valores tenham de ser iguais
+					allButtons[i].setAttribute("disabled", "disabled");
+				}
 			// invoca a função checkAnswer para verificar a resposta
 			this.checkAnswer(event, index);
 		},
@@ -170,18 +174,21 @@ export default {
 		 * Os parâmetros "index" e "event" asseguram a continuidade do método anterior
 		 */
 		checkAnswer: function (event, index) {
-			let question = {}; /*====TO DO====*/
+			let question = this.questions[index];
 			if (question.userAnswer) {
 				if (this.index < this.questions.length - 1) {
 					setTimeout(
 						function () {
 							// atualiza o index atual
-							/*====TO DO====*/
+							this.index += 1;
 							// atualiza o número da questão atual
-							/*====TO DO====*/
+							document.getElementById("question-number").innerHTML = "Question number " + (this.index + 1) + "/" + this.questions.length;
 							// ao passar à próxima pergunta, reinicializa os atributos dos botões
-							// isto impede conflitos quando várias perguntas têm respostas iguais a perguntas anteriores
-							/*====TO DO====*/
+							let allButtons = document.querySelectorAll(`[index="${index}"]`);
+							for (let i = 0; i < allButtons.length; i++){
+								allButtons[i].removeAttribute("disabled");
+								allButtons[i].removeAttribute("class");
+							}
 						}.bind(this),
 						1000
 					);
@@ -190,7 +197,7 @@ export default {
 
 			if (question.userAnswer === question.correct_answer) {
 				// Se a resposta estiver correta, a classe "rightAnswer" é adicionada -> para CSS
-				/*====TO DO====*/
+				event.target.classList.add("rightAnswer");
 
 				// quando o utilizador acerta uma pergunta, adiciona 5 segundos ao temporizador
 				// e a sua pontuação aumenta
@@ -200,7 +207,7 @@ export default {
 				this.score++;
 			} else {
 				// Se a resposta estiver errada, a classe "wrongAnswer" é adicionada -> para CSS
-				/*====TO DO====*/
+				event.target.classList.add("WrongAnswer");
 
 				// quando o utilizador erra uma pergunta, o temporizador é diminuido 3 segundos
 				this.timer -= 3;
@@ -213,7 +220,7 @@ export default {
 				);
 				allButtons.forEach(function (button) {
 					if (button.innerHTML === correctAnswer) {
-						/*====TO DO====*/
+						button.classList.add("showRightAnswer");
 					}
 				});
 			}
@@ -221,7 +228,9 @@ export default {
 			if (this.questions.length - 1 === this.index) {
 				setTimeout(() => {
 					this.playing = false;
-					/*====TO DO====*/
+					document.getElementById("quiz").hidden = true;
+					document.getElementById("score").hidden = false;
+					document.getElementById("score").innerHTML = "You got " + this.score + " out of " + this.questions.length + "questions right!";
 				}, 1000);
 			}
 		},
@@ -358,10 +367,23 @@ label:hover {
 		0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
 button {
-	font-size: 1.1rem;
-	/*====TO DO====*/
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 0.3rem;
+    width: 47%;
+    background-color: rgba(100, 100, 100, 0.3);
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
-/*====TO DO==== BUTTON HOVER*/
+button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+        0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
 button:focus {
 	outline: none;
 }
